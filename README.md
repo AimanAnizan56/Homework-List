@@ -11,4 +11,4 @@ Goals:-
 Also, had applied dark mode by Tailwind :sunny::new_moon:
 
 :warning: This project is still under construction :construction:
-link:
+link: https://aimananizan56.github.io/Homework-List/
