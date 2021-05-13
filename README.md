@@ -3,6 +3,7 @@
 Trying out to make a responsive using Tailwind CSS framework :sparkles:
 
 Goals:-
+
 :arrow_forward: Make self fimiliar with utility-first CSS framework.
 :arrow_forward: Understand grid layout works.
 :arrow_forward: Get used with DOM using vanilla JS.
