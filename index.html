@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,7 +9,110 @@
         <!-- Tailwind.css -->
         <link rel="stylesheet" href="css/style.css" />
     </head>
-    <body class="bg-white">
-        <div></div>
+    <body class="bg-white dark:bg-gray-800 transition-all">
+        <!-- Title -->
+        <div class="p-3">
+            <h1 class="text-center text-3xl font-semibold text-black dark:text-white">
+                Homework List
+                <span class="absolute mt-2 ml-2 cursor-pointer" id="toggle-dark">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                    >
+                        <path
+                            d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+                        />
+                    </svg>
+                </span>
+            </h1>
+        </div>
+
+        <hr class="bg-black" />
+
+        <!-- List of homework -->
+        <div
+            class="container py-3 px-10 mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-4 lg:grid-cols-3"
+        >
+            <!-- Box for subject -->
+            <div class="border-2 rounded-lg border-gray-300 p-3 m-2 max-w-md">
+                <h2 class="text-xl pl-2 font-semibold text-gray-600 dark:text-gray-300">
+                    ISP501
+                    <span class="text-sm bg-blue-600 rounded-full px-2 text-white absolute m-1">
+                        1
+                    </span>
+                </h2>
+                <hr class="bg-black my-2" />
+                <div class="text-md text-gray-500 dark:text-gray-300">
+                    <ul class="list-disc list-inside pl-4">
+                        <li>Proposal</li>
+                        <li>Kertas Kerja</li>
+                        <li>Kajian Lapangan</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Box for subject -->
+            <div class="border-2 rounded-lg border-gray-300 p-3 m-2 max-w-md">
+                <h2 class="text-xl pl-2 font-semibold text-gray-600 dark:text-gray-300">
+                    ISP501
+                    <span class="text-sm bg-blue-600 rounded-full px-2 text-white absolute m-1">
+                        1
+                    </span>
+                </h2>
+                <hr class="bg-black my-2" />
+                <div class="text-md text-gray-500 dark:text-gray-300">
+                    <ul class="list-disc list-inside pl-4">
+                        <li>Proposal</li>
+                        <li>Kertas Kerja</li>
+                        <li>Kajian Lapangan</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Box for subject -->
+            <div class="border-2 rounded-lg border-gray-300 p-3 m-2 max-w-md">
+                <h2 class="text-xl pl-2 font-semibold text-gray-600 dark:text-gray-300">
+                    ISP501
+                    <span class="text-sm bg-blue-600 rounded-full px-2 text-white absolute m-1">
+                        1
+                    </span>
+                </h2>
+                <hr class="bg-black my-2" />
+                <div class="text-md text-gray-500 dark:text-gray-300">
+                    <ul class="list-disc list-inside pl-4">
+                        <li>Proposal</li>
+                        <li>Kertas Kerja</li>
+                        <li>Kajian Lapangan</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Box for subject -->
+            <div class="border-2 rounded-lg border-gray-300 p-3 m-2 max-w-md">
+                <h2 class="text-xl pl-2 font-semibold text-gray-600 dark:text-gray-300">
+                    ISP501
+                    <span class="text-sm bg-blue-600 rounded-full px-2 text-white absolute m-1">
+                        1
+                    </span>
+                </h2>
+                <hr class="bg-black my-2" />
+                <div class="text-md text-gray-500 dark:text-gray-300">
+                    <ul class="list-disc list-inside pl-4">
+                        <li>Proposal</li>
+                        <li>Kertas Kerja</li>
+                        <li>Kajian Lapangan</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </body>
+    <script>
+        // Add event listener for toggle darkmode
+        document.getElementById("toggle-dark").onclick = () => {
+            let htmlTag = document.getElementById("html");
+
+            if (htmlTag.className == "dark") {
+                htmlTag.className = "";
+            } else [(htmlTag.className = "dark")];
+        };
+    </script>
 </html>
