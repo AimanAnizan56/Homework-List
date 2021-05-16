@@ -1,3 +1,4 @@
+var currentIndex;
 function getData(path) {
     /* Promise */
     fetch(path)
@@ -7,6 +8,7 @@ function getData(path) {
                 const obj = data[index];
 
                 addCardElement(obj, index);
+                currentIndex = index;
             }
         })
         .catch((err) => console.log(err));
