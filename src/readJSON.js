@@ -45,7 +45,7 @@ function addCardElement(obj, index) {
     svg.setAttribute("viewBox", "0 0 20 20");
     svg.setAttribute("fill", "currentColor");
     svg.setAttribute("class", "h-7 w-7 transition-all transform hover:rotate-90 cursor-pointer");
-    svg.setAttribute("onclick", "removeElement('card" + index + "')");
+    svg.setAttribute("onclick", 'removeElement("card' + index + ')"');
     h2.appendChild(svg);
 
     let path = document.createElementNS("http://www.w3.org/2000/svg", "path");
