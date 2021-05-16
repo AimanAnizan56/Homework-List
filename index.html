@@ -11,10 +11,20 @@
     </head>
     <body class="bg-white dark:bg-gray-800 transition-all">
         <!-- Title -->
-        <div class="p-3">
-            <h1 class="text-center text-3xl font-semibold text-black dark:text-white">
-                Homework List
-                <span class="absolute mt-2 ml-2 cursor-pointer" id="toggle-dark">
+        <nav class="p-3">
+            <h1
+                class="
+                    text-center text-3xl
+                    font-semibold
+                    text-black
+                    dark:text-white
+                    flex
+                    justify-center
+                    items-center
+                "
+            >
+                <a href="/" class="cursor-pointer">Homework List</a>
+                <span class="cursor-pointer ml-3 mt-1 animate-bounce" id="toggle-dark">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         class="h-6 w-6"
@@ -27,7 +37,7 @@
                     </svg>
                 </span>
             </h1>
-        </div>
+        </nav>
 
         <hr class="bg-black" />
 
@@ -43,63 +53,38 @@
                 md:gap-4
                 lg:grid-cols-3
             "
+            id="root"
         >
             <!-- Card for subject -->
-            <div class="border-2 rounded-lg border-gray-300 p-3 m-2 max-w-md">
-                <h2
-                    class="
-                        text-xl
-                        pl-2
-                        font-semibold
-                        text-gray-600
-                        dark:text-gray-300
-                        flex
-                        justify-between
-                        items-center
-                    "
-                >
-                    <!-- Homework Name -->
-                    <span class="inline-block" id="homework-name"> ISP501 </span>
-                    <!-- Close button -->
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5 transition-all transform hover:rotate-90"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                    >
-                        <path
-                            fill-rule="evenodd"
-                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                            clip-rule="evenodd"
-                        />
-                    </svg>
-                </h2>
+        </div>
 
-                <hr class="bg-black my-2" />
-
-                <!-- Date -->
-                <span
-                    class="
-                        text-md
-                        inline-block
-                        py-1
-                        px-3
-                        border-2
-                        my-1
-                        rounded-full
-                        text-gray-500
-                        dark:text-gray-300
-                    "
-                >
-                    <span> Date: </span>
-                    <span id="due-date"> 15 Jun 2021 </span>
-                    <!-- 
-                    <ul class="list-disc list-inside pl-4">
-                        <li>Proposal</li>
-                    </ul>
-                     -->
-                </span>
-            </div>
+        <!-- Add button -->
+        <div
+            class="
+                fixed
+                bottom-10
+                right-0
+                border-2 border-gray-500
+                text-gray-500
+                rounded-full
+                dark:border-gray-300
+                dark:text-gray-300
+            "
+        >
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-7 w-7"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+            >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                />
+            </svg>
         </div>
     </body>
     <script>
@@ -112,4 +97,6 @@
             } else [(htmlTag.className = "dark")];
         };
     </script>
+
+    <script src="src/readJSON.js"></script>
 </html>
