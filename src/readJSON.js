@@ -4,6 +4,7 @@ function getData(path) {
     fetch(path)
         .then((Response) => Response.json())
         .then((data) => {
+            console.log(data);
             for (let index = 0; index < data.length; index++) {
                 const obj = data[index];
 
@@ -14,7 +15,7 @@ function getData(path) {
         .catch((err) => console.log(err));
 }
 
-getData("/src/data.JSON");
+getData("src/data.JSON");
 
 function removeElement(elem) {
     document.getElementById(elem).remove();
