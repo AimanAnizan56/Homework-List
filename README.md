@@ -10,4 +10,3 @@ Goals :-<br/>
 Also, had applied dark mode by Tailwind CSS :sunny::new_moon: <br/>
 <br/>
 Warning :warning: : This project is still under construction :construction: <br/>
-Link :link: : https://aimananizan56.github.io/Homework-List/
