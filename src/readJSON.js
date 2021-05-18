@@ -81,4 +81,4 @@ function addCardElement(obj, index) {
     div.appendChild(span2);
 }
 
-getData("src/data.JSON");
+getData("src/data.json");
