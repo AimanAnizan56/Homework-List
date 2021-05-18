@@ -1,5 +1,6 @@
 var currentIndex;
 function getData(path) {
+    console.log("Path: " + path);
     /* Promise */
     fetch(path)
         .then((response) => response.json())
@@ -15,7 +16,7 @@ function getData(path) {
         .catch((err) => console.log(err));
 }
 
-getData("data.JSON");
+getData("src/data.JSON");
 
 function removeElement(elem) {
     document.getElementById(elem).remove();
