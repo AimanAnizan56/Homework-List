@@ -1,4 +1,5 @@
 var currentIndex;
+
 function getData(path) {
     console.log("Path: " + path);
     /* Promise */
