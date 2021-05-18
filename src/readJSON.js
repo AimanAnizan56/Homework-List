@@ -15,7 +15,7 @@ function getData(path) {
         .catch((err) => console.log(err));
 }
 
-getData("src/data.JSON");
+getData("data.JSON");
 
 function removeElement(elem) {
     document.getElementById(elem).remove();
