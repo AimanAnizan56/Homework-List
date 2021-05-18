@@ -2,7 +2,7 @@ var currentIndex;
 function getData(path) {
     /* Promise */
     fetch(path)
-        .then((Response) => Response.json())
+        .then((response) => response.json())
         .then((data) => {
             console.log(data);
             for (let index = 0; index < data.length; index++) {
