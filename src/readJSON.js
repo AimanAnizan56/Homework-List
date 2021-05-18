@@ -66,7 +66,7 @@ function addCardElement(obj, index) {
     /* Create date */
     let span2 = document.createElement("span");
     span2.className =
-        "text-md inline-block py-1 px-3 border-2 my-1 rounded-full text-gray-500 dark:text-gray-300";
+        "text-sm md:text-md inline-block py-1 px-3 border-2 my-1 rounded-full text-gray-500 dark:text-gray-300";
 
     let span3 = document.createElement("span");
     span3.appendChild(document.createTextNode("Date : "));
