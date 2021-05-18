@@ -16,8 +16,6 @@ function getData(path) {
         .catch((err) => console.log(err));
 }
 
-getData("src/data.JSON");
-
 function removeElement(elem) {
     document.getElementById(elem).remove();
 }
@@ -82,3 +80,5 @@ function addCardElement(obj, index) {
 
     div.appendChild(span2);
 }
+
+getData("src/data.JSON");
